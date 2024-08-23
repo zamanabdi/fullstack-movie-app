@@ -1,0 +1,192 @@
+.header-wrapper {
+  /* border: 2px solid red; */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo-wrapper {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #d8aa45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.logo-wrapper span {
+  background: transparent;
+}
+
+.logo-wrapper img {
+    width: 60px;
+  background: transparent;
+}
+
+.menu {
+  /* border: 2px solid yellow; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: transparent;
+}
+
+.menu li {
+  list-style: none;
+  font-size: 25px;
+  background: transparent;
+}
+
+
+.menu a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu a:hover{
+    color: #d8aa45;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.nav-wrapper-mobile{
+    display: none;
+}
+
+.ham-icon{
+    display: none;
+}
+
+
+
+
+.nav-wrapper-hidden{
+    display: none;
+}
+
+
+/* media queries */
+@media screen and (max-width: 400px) {
+    .header-wrapper {
+        /* border: 2px solid red; */
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .logo-wrapper{
+        font-size: 30px;
+      }
+
+      .logo-wrapper img {
+        width: 50px;
+        background: transparent;
+      }
+
+      .menu{
+        display: none;
+      }
+
+      .nav-wrapper {
+       background: transparent;
+        position: absolute;
+        top:75px;
+        right: 15px;
+        border: 2px solid yellow;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+       padding: 8px;
+       animation: slideDown 0.5s ease;
+      }
+
+      /* .nav-wrapper-hidden{
+        display: none;
+      } */
+
+      .nav-wrapper li {
+        list-style: none;
+        font-size: 18px;
+        background: transparent;
+      }
+
+      .nav-wrapper a{
+        text-decoration: none;
+        background: transparent;
+      }
+      
+      .nav-wrapper li:hover {
+        color: #d8aa45;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+
+      .ham-icon{
+        display: block;
+        position: absolute;
+        top:25px;
+        right: 50px;
+        background-color: transparent;
+      }
+
+      .ham-icon svg{
+        background-color: transparent;
+      }
+
+      .nav-wrapper-hidden{
+        display: none;
+      }
+
+}
+
+
+/* keyframe command */
+
+@keyframes slideDown {
+   0%{
+    transform: translateY(-75px);
+   }
+
+   100%{
+    transform: translateY(0px);
+   }
+}
